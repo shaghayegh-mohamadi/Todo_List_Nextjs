@@ -30,7 +30,7 @@ import { Todo } from './Todo'
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex justify-center mb-6 ">
+    <form onSubmit={handleSubmit} className="flex justify-center mt-4">
     <input
     value={newTask}
     onChange={(e) => setNewTask(e.target.value)}
