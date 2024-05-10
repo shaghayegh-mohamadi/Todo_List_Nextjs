@@ -44,7 +44,7 @@ const TodoList  = () => {
         taskValue.map((todo,i) => 
           todo.isEditing ? (
             <div className="mt-3">
-              <Edit key={todo.id} editTodo={editTask} task={todo} />
+              <Edit key={i} editTodo={editTask} task={todo} />
             </div>
            ):
            (
