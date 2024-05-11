@@ -22,13 +22,13 @@ import { Todo } from './Todo'
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex justify-center mb-6">
+    <form onSubmit={handleSubmit} className="flex justify-center mb-6 ">
     <input
     value={value}
     onChange={(e) => setValue(e.target.value)}
      placeholder='add task'
      type='text'
-     className=' w-96 px-4 py-2 outline-none focus:outline-none rounded border ' />
+     className=' md:w-96 xs:w-64  px-4 py-2 outline-none focus:outline-none rounded border ' />
      <button type="submit" className="px-4 py-2 rounded bg-teal-700 text-white ml-1">submit</button>
     </form>
   )

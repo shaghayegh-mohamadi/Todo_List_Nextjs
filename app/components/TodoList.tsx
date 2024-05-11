@@ -37,7 +37,7 @@ const TodoList  = () => {
 
     return(
      <div className=' text-center my-6 mt-10'>
-     <h1 className='text-2xl font-bold mb-6'>Todo List App</h1>
+     <h1 className='md:text-2xl xs:text-sm font-bold mb-6'>Todo List App</h1>
      <div className="flex flex-col items-center ">
       <Form  createTodo={createTodo}/> 
       {
