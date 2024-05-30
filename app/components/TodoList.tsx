@@ -14,14 +14,7 @@ interface TodoItem {
 }
 
 const TodoList = () => {
-  const [taskValue, setTaskValue] = useState<TodoItem[]>(() => {
-    const savedTodos = localStorage.getItem('todos')
-    return savedTodos ? JSON.parse(savedTodos) : []
-  })
-
-  useEffect(() => {
-    localStorage.setItem('todos', JSON.stringify(taskValue))
-  }, [taskValue])
+  const [taskValue, setTaskValue] = useState<TodoItem[]>([])
 
   const createTodo = (todo: TodoItem) => {
     setTaskValue([...taskValue, todo])
